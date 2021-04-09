@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	  <title>My Portfolio</title>
+	  <!-- Main CSS File -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		
+		<div class="col-md-10 mainBody">
+			<div>
+				<h3>
+					Week 2: Independent Project
+				</h3>
+				<p>A web application that takes a user's birthday, calculates the day of the week they were born and then depending on their gender, outputs their Akan Name. </p>
+				<p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
+		</div>
+		<hr>
+		<form>
+			<div id="births">
+				
+				<div class="my-form-group">
+					<label><h6>Enter your birth year:</h6></label>
+					<input type="text" class="form-control" id="birthyear" placeholder="Year">
+				</div>
+				
+				<div class="my-form-group">
+					<label><h6>Enter your birth month:</h6></label>
+					<input type="text" class="form-control" id="birthmonth" placeholder="Month" list="months">
+					<datalist id="months">
+						<option value="January"></option>
+						<option value="February"></option>
+						<option value="March"></option>
+						<option value="April"></option>
+						<option value="May"></option>
+						<option value="June"></option>
+						<option value="July"></option>
+						<option value="August"></option>
+						<option value="September"></option>
+						<option value="October"></option>
+						<option value="November"></option>
+						<option value="December"></option>
+				  </datalist>
+				</div>
+				
+				<div class="my-form-group">
+					<label><h6>Enter your birth day:</h6></label>
+					<input type="number" class="form-control" id="birthday" placeholder="day" min="1" max="31">
+				</div>
+				
+				<div id="genders">
+				
+					<div class="form-group">
+						<label><h6>Gender:</h6></label>
+						<select class="form-control" id="gender">
+						  <option value="Male">Male</option>
+						  <option value="Female">Female</option>
+						</select>
+					</div>
+			</div>
+				
+			</div>
+			
+			<div id="myButton">
+				<button type="button" class="btn btn-primary" onClick="getUserData()">Confirm</button>
+			</div>
+		</form>
+			<div id="replyMessage">
+				<div class="alert alert-success">
+					<span>You were born on <strong id="weekDay"></strong>, hence your Akan name is <strong id="ghanaName"></strong> </span>
+				</div>
+			</div>
+			
+		</div>
+		
+		  <!-- Main JS File -->
+  		<script src="js/scripts.js"></script>
+	</body>
+</html>

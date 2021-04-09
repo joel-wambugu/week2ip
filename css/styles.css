@@ -1,0 +1,40 @@
+.mainBody{
+	border: 2px solid #7C7C7C;
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 30px;
+	box-shadow: 0 0 24px 0 #212529;
+}
+
+
+
+#births{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.form-control{
+	width: 90%;
+	display:block;
+}
+
+.my-form-group{
+	width: auto;
+}
+
+#myButton{
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	width: fit-content;
+}
+
+.alert{
+	margin-top: 30px;
+}
+
+#replyMessage{
+	display: none;
+}
