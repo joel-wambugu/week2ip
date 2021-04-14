@@ -7,7 +7,7 @@ A web application that takes a user's birthday, calculates the day of the week t
 
 
 Author(s) information:
-joel.wambugu@@student.moringaschool.com
+joel.wambugu@student.moringaschool.com
 
 
 Technologies used:
